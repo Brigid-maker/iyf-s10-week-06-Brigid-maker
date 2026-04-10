@@ -1,0 +1,245 @@
+/* ===============================
+   RESET (Task 3.1)
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===============================
+   COLOR SYSTEM (Task 3.4)
+================================ */
+:root {
+    --color-primary: #2563eb;
+    --color-secondary: #9333ea;
+    --color-background: #f9fafb;
+    --color-text: #1f2937;
+    --color-muted: #6b7280;
+
+    --color-primary-light: #60a5fa;
+    --color-primary-dark: #1e40af;
+
+    /* TYPOGRAPHY SCALE (Task 3.3) */
+    --font-xs: 0.75rem;
+    --font-sm: 0.875rem;
+    --font-base: 1rem;
+    --font-lg: 1.125rem;
+    --font-xl: 1.25rem;
+    --font-2xl: 1.5rem;
+    --font-3xl: 1.875rem;
+    --font-4xl: 2.25rem;
+}
+
+/* ===============================
+   BASE TYPOGRAPHY (Task 3.1)
+================================ */
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    padding: 20px;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: var(--font-4xl);
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+h2 {
+    font-size: var(--font-3xl);
+    font-weight: 600;
+}
+
+h3 {
+    font-size: var(--font-2xl);
+    font-weight: 600;
+}
+
+h4 { font-size: var(--font-xl); }
+h5 { font-size: var(--font-lg); }
+h6 { font-size: var(--font-base); }
+
+/* Paragraph */
+p {
+    margin-bottom: 15px;
+}
+
+/* ===============================
+   LINKS & BUTTONS
+================================ */
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-primary-dark);
+    text-decoration: underline;
+}
+
+button {
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--color-primary-dark);
+}
+
+/* ===============================
+   LAYOUT
+================================ */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/* ===============================
+   BOX MODEL (Task 3.2)
+================================ */
+.box {
+    width: 300px;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 20px auto;
+    background-color: lightblue;
+}
+
+/* FIXED BOX */
+.broken-box {
+    width: 300px;
+    padding: 20px;
+    border: 2px solid red;
+    margin: 20px auto;
+    box-sizing: border-box; /* FIX */
+    background-color: lightcoral;
+}
+
+/* ===============================
+   CARD COMPONENT
+================================ */
+.card {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid gray;
+    margin: 20px auto;
+}
+
+.card img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+.card p {
+    margin-bottom: 15px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 250px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.gallery img{
+    width: 100%;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 768px){
+    .projects-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px){
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.card-hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.button, .card{
+    transition: all 0.3s ease;
+}
+
+a:focus, button:focus{
+    outline: 2px solid var(--color-primary);
+}

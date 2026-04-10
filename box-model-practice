@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model Practice</title>
+  
+</head>
+<body>
+
+  <h2>Box Model Visualization</h2>
+  <div class="box">Box 1</div>
+  <div class="box">Box 2</div>
+  <div class="box">Box 3</div>
+  <div class="box">Box 4</div>
+
+
+  <h2>Debugged Box</h2>
+  <div class="broken-box">This box is 300px wide (including padding)</div>
+
+
+  <h2>Card Component</h2>
+  <div class="card">
+    <img src="https:                                            
+    <h2 class="title">Card Title</h2>
+    <p>This is a card description.</p>
+    <button class="btn">Click Me</button>
+  </div>
+</body>
+</html>
+
+

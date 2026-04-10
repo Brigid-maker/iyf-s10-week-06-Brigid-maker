@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Your CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+<a href="index.html">Home</a> |
+<a href="about.html">About</a> |
+<a href="projects.html">Projects</a> |
+<a href="contact.html">Contact</a>
+</nav>
+    </header>
+
+<h1>Contact Us</h1>
+
+<form action="#" method="post">
+
+    <!-- Personal Information -->
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fullname">Full Name:</label><br>
+        <input 
+            type="text" 
+            id="fullname" 
+            name="fullname" 
+            placeholder="Enter your full name"
+            required>
+        <br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="example@email.com"
+            required>
+        <br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input 
+            type="tel" 
+            id="phone" 
+            name="phone" 
+            placeholder="+254 700 123456">
+    </fieldset>
+
+    <br>
+
+    <!-- Message Information -->
+    <fieldset>
+        <legend>Your Message</legend>
+
+        <label for="subject">Subject:</label><br>
+        <select id="subject" name="subject">
+            <option value="general">General Inquiry</option>
+            <option value="support">Support</option>
+            <option value="feedback">Feedback</option>
+        </select>
+
+        <br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea 
+            id="message" 
+            name="message" 
+            placeholder="Write your message here (minimum 50 characters)"
+            minlength="50"
+            required>
+        </textarea>
+
+        <br><br>
+
+        <input type="checkbox" id="newsletter" name="newsletter">
+        <label for="newsletter">Subscribe to our newsletter</label>
+
+    </fieldset>
+
+    <br>
+
+    <button type="submit">Submit</button>
+
+</form>
+<footer class="footer">
+    <div class="footer-container">
+
+        <div>
+            <h3>About</h3>
+            <p>Student developer</p>
+        </div>
+
+        <div>
+            <h3>Links</h3>
+            <p>Home</p>
+            <p>Projects</p>
+        </div>
+
+        <div>
+            <h3>Contact</h3>
+            <p>Email@example.com</p>
+        </div>
+
+    </div>
+
+    <p class="copyright">© 2026 My Portfolio</p>
+</footer>
+
+</body>
+</html>
