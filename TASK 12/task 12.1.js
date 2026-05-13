@@ -110,4 +110,4 @@ async function fetchPostsForUser(userId) {
     }
 }
 
-fetchPostsForUser(1);
+fetchPostsForUser(1); 
